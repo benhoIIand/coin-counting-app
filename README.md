@@ -1,6 +1,10 @@
 Coin Counting App
 ==============
 
+## To Run
+
+Just download this repository (and unzip) to a folder and run the `index.html` file
+
 ## Todo
 - ~~Get testing framework in place~~
 - ~~Create a simple HTML page~~
