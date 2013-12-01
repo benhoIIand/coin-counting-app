@@ -11,6 +11,8 @@ var countCoins = function(amount) {
 
     var pennies = Object.keys(coins).map(function(key) {
         return parseInt(key, 10);
+    }).sort(function(a, b) {
+        return a === b ? 0 : (a < b ? 1 : -1);
     });
 
     var output = {};
