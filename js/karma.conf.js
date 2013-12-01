@@ -7,7 +7,8 @@ module.exports = function(config) {
 
         // list of files / patterns to load in the browser
         files: [
-            'src/*.js',
+            'src/countCoins.js',
+            'src/validateCurrencyInput.js',
             'test/*Spec.js'
         ],
 

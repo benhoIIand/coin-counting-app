@@ -65,16 +65,16 @@ describe('Given an amount to validate', function() {
         describe('should return an error message when given', function() {
 
             it('an empty string', function() {
-                expect(validateCurrencyInput('')).toEqual('Please enter an amount');
+                expect(validateCurrencyInput('').error).toEqual('Please enter an amount');
             });
 
             it('a non-numeric character', function() {
-                expect(validateCurrencyInput('1x')).toEqual('Please enter an amount in the correct format');
-                expect(validateCurrencyInput('£1x.0p')).toEqual('Please enter an amount in the correct format');
+                expect(validateCurrencyInput('1x').error).toEqual('Please enter an amount in the correct format');
+                expect(validateCurrencyInput('£1x.0p').error).toEqual('Please enter an amount in the correct format');
             });
 
             it('a string with missing digits', function() {
-                expect(validateCurrencyInput('£p')).toEqual('Please enter an amount in the correct format');
+                expect(validateCurrencyInput('£p').error).toEqual('Please enter an amount in the correct format');
             });
         });
 

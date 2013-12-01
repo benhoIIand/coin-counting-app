@@ -12,6 +12,7 @@
     "dojo": false,
     "predef": [
         "require",
+        "define",
         "module",
         "describe",
         "it",

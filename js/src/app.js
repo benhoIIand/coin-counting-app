@@ -1,7 +1,3 @@
-window.$ = function(selector) {
-    return document.querySelector(selector);
-};
-
 var $calculateBtn  = $('#calculate_btn');
 var $currencyInput = $('#currency_input');
 var $coinsResults  = $('#coins_result');
@@ -11,6 +7,7 @@ var errorTemplate = Handlebars.compile($('#error_template').innerHTML);
 
 $calculateBtn.onclick = function() {
     var html;
+
     var amount = $currencyInput.value;
     var parsedCurrency = validateCurrencyInput(amount);
 

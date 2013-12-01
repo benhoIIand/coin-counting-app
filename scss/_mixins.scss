@@ -1,0 +1,12 @@
+@mixin box-sizing($type: "border-box") {
+    box-sizing: $type;
+    -webkit-box-sizing: $type;
+    -moz-box-sizing: $type;
+}
+
+@mixin gradient($from, $to) {
+    background-color: $from;
+    background-image: -webkit-linear-gradient(top, $from, $to);
+    background-image: -moz-linear-gradient(top, $from, $to);
+    background-image: linear-gradient(top, $from, $to);
+}

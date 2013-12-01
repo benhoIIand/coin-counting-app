@@ -47,5 +47,4 @@ var validateCurrencyInput = function(input) {
     };
 
     return parseInt(extractPounds(input), 10) + parseInt(extractPennies(input), 10);
-
 };
