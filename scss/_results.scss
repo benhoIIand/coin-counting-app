@@ -1,0 +1,22 @@
+.results {
+    margin: 22px 0;
+}
+
+.result {
+    background: #FAFAFA;
+    padding: 8px;
+    border: 1px solid #CECECE;
+    margin-bottom: 4px;
+
+    font-weight: bold;
+    font-size: 1.4em;
+
+    &:nth-child(even) {
+        background: #F5F5F5;
+    }
+
+    .coin,
+    .amount {
+        font-size: 1.4em;
+    }
+}

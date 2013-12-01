@@ -339,7 +339,10 @@ table {
   border-spacing: 0; }
 
 body {
-  padding: 40px; }
+  padding: 40px;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  color: #333; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
@@ -351,7 +354,9 @@ h3, h4 {
   margin-bottom: 12px; }
 
 input {
-  padding: 4px; }
+  padding: 5px;
+  border: 1px solid #CECECE;
+  border-radius: 2px; }
 
 .btn, .btn--action {
   height: 30px;
@@ -378,3 +383,27 @@ input {
   text-transform: uppercase; }
   .btn--action:hover {
     background-image: none; }
+
+.error {
+  padding: 8px;
+  border: 2px solid #b81111;
+  border-radius: 4px;
+  color: #b81111;
+  font-size: 1em;
+  font-weight: bold; }
+
+.results {
+  margin: 22px 0; }
+
+.result {
+  background: #FAFAFA;
+  padding: 8px;
+  border: 1px solid #CECECE;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 1.4em; }
+  .result:nth-child(even) {
+    background: #F5F5F5; }
+  .result .coin,
+  .result .amount {
+    font-size: 1.4em; }
