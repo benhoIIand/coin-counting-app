@@ -1,5 +1,20 @@
 var validateCurrencyInput = function(input) {
 
+    // Check if the string is empty
+    if(input === '') {
+        return 'Please enter an amount';
+    }
+
+    // Check if it contains any characters, excluding 'p'
+    if(/(?!£|p)[a-z]/ig.test(input)) {
+        return 'Please enter an amount in the correct format';
+    }
+
+    // Check if it contains no numbers
+    if(!/\d/.test(input)) {
+        return 'Please enter an amount in the correct format';
+    }
+
     var extractPounds = function(str) {
         var hasPounds = /£|\./.test(str);
 
